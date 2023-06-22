@@ -12,27 +12,25 @@
     
     <title>Bio: John Ault</title>
     <style>
-        div {
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create three equal columns that floats next to each other */
+        .column {
           float: left;
-          padding: 50px; 
-          
+          width: 33.33%;
+          padding: 10px;
+          height: 300px; /* Should be removed. Only for demonstration */
         }
         
-        .div1 {
-          float:left;
-          width: 25%;
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
         }
-        
-        .div2 {
-          float:left;
-          width: 25%;
-        }
-        
-        .div3 {
-          float:left;
-          width: 25%;
-        }
-        </style>    
+        </style>
   </head>
     
   <body align="center">
@@ -46,48 +44,50 @@
 <br><br>    
     <h2>About me</h2>
     
-    <p>Hi. My name is John and I live in Ohio and I'm learning <strong>HTML, Git, GitHub, and Git Bash</strong> from a dude in Canada who works for a company in Norway.</p>
-
-    <img src="images/Screenshot 2023-06-22 125345.png" width="400" height="auto">
 
     <p> Join me on GitHub at <a href="https://github.com/Jault1/" target="_blank">https://github.com/Jault1/</a></p>
     <br><br>
+
+    <div class="row">
+        <div class="column" style="background-color:#cdcdcd;">
+            <h2 style="text-align: left;">Stuff I like:</h2>
+            <ul style="text-align: left;">
+              <li>Camping</li>
+              <li>Boating</li>
+              <li>Web development</li>
+            </ul>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+            <img src="images/Screenshot 2023-06-22 125345.png" width="400" height="auto">
+            <p>Hi. My name is John and I live in Ohio and I'm learning <strong>HTML, Git, GitHub, and Git Bash</strong> from a dude in Canada who works for a company in Norway.</p>
+        </div>
+        <div class="column" style="background-color:#cdcdcd;">
+            <h3>Contact me:</h3>
+            <form>
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter first name" /><br>
+        
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter last name" /><br>
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter email" />
+            <br>
+            <br>
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" rows="4" cols="18"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>        </div>
+      </div>    
     <!-- List -->
-    <div class="div1">
-    <h2 style="text-align: left;">Stuff I like:</h2>
-    <ul style="text-align: left;">
-      <li>Camping</li>
-      <li>Boating</li>
-      <li>Web development</li>
-    </ul>
-</div>
+
     <br><br>
     
-<div class="div2">
-    <p>A short paragraph about you</p>
+  
 
-    <p>An image of yourself</p>
-</div>
-
-<div class="div3">
-    <h3>Contact me:</h3>
-    <form>
-    <label for="fname">First name</label>
-    <input type="text" id="fname" name="fname" placeholder="Enter first name" /><br>
-
-    <label for="lname">Last name</label>
-    <input type="text" id="lname" name="lname" placeholder="Enter last name" /><br>
-
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Enter email" />
-    <br>
-    <br>
-    <label for="comments">Comments</label>
-    <textarea id="comments" name="comments" rows="4" cols="25"></textarea>
-    <br>
-    <br>
-    <input type="submit" value="Submit">
-</form>
+ 
 
 
 <p>Submission<br>
