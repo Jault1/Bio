@@ -21,6 +21,12 @@
 
   <title>Bio: John Ault</title>
   <style>
+    body {
+      font-size: 16px;
+      line-height: 20px;
+      font-family:Arial, Helvetica, sans-serif
+    }
+
     .avatar {
       border-radius: 50%;
     }
@@ -45,6 +51,21 @@
       display: table;
       clear: both;
     }
+
+    .col1 {
+      background-color: #b2b2b2 !important;
+      margin-left:12%;
+      text-align: left;
+    }
+
+    .col2 {
+      background-color: #f4e1d2 !important;
+    }
+    
+    .col3 {
+      background-color: #f18973 !important;
+      text-align: right;
+    }
   </style>
 </head>
 
@@ -60,7 +81,7 @@
   <br><br>
 
   <div class="row">
-    <div class="column" style="background-color:#cdcdcd;margin-left:12%">
+    <div class="column col1">
       <h2>About me</h2>
       <p> See what I&rsquo;m doing on GitHub at <a href="https://github.com/Jault1/"
           target="_blank">https://github.com/Jault1/</a></p>
@@ -72,12 +93,14 @@
         <li>Web development</li>
       </ul>
     </div>
-    <div class="column" style="background-color:#bbb;">
+    <div class="column col2">
       <img src="images/Screenshot 2023-06-22 125345.png" width="300" height="auto">
-      <p>Hi. My name is John and I live in Ohio and I'm learning <strong>HTML, Git, GitHub, and Git Bash</strong> from a
-        dude in Canada who works for a company in Norway.</p>
+      <p>Hi. My name is John, I live in Ohio, and I'm learning <strong>HTML, Git, GitHub, and Git Bash</strong> from a
+        dude in Canada who works for a company in Norway. <br>
+        <br>
+        Wait what?</p>
     </div>
-    <div class="column" style="background-color:#cdcdcd;">
+    <div class="column col3">
       <h2>Contact me:</h2>
       <form>
         <label for="fname">First name</label>
@@ -94,16 +117,15 @@
         <textarea id="comments" name="comments" rows="4" cols="18"></textarea>
         <br>
         <br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit"><br>
+        <br>
+        <em>Note: This goes nowhere because we didn't learn that yet.</em>
       </form>
     </div>
   </div>
   <!-- List -->
 
-  <p><strong>Submission</strong><br>
-    Submit the URL of the GitHub Repository that contains your work.</p>
-
-  <h3>Online Referenced Resources</h3>
+  <h2>Online Referenced Resources</h2>
 
   <p>
     developer.mozilla.org/en-US/<br>
@@ -111,7 +133,7 @@
     stackoverflow.com/questions/14494747/how-to-add-images-to-readme-md-on-github<br><br><br>
   </p>
 
-  <p>Learn to do this yourself here: <a href="https://w3schools.com">W3Schools!</a></p>
+  <p><strong>Learn to do this yourself here: <a href="https://w3schools.com">W3Schools!</a></strong></p>
 
 </body>
 
