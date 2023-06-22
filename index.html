@@ -1,127 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <!-- 
   
+  //This code was referenced from
   
-  <!DOCTYPE html>
-    
-  <html lang="en">
-    
-  <head>
-    
-    <meta charset="UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Bio: John Ault</title>
-    <style>
-      .avatar {
-          border-radius: 50%;
-      }
-        * {
-          box-sizing: border-box;
-        }
-        
-        /* Create three equal columns that floats next to each other */
-        .column {
-          float: left;
-          width: 340px;
-          padding: 20px;
-          margin: 20px;
-          height: 400px; /* Should be removed. Only for demonstration */
-        }
-        
-        /* Clear floats after the columns */
-        .row:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-        </style>
-  </head>
-    
-  <body align="center">
-    
-    <!-- This is how i add comments, that HTML Will ignore -->
-    
-    <!-- Headers H1 -> H6-->
-    
-    <h1>John Ault</h1>
-  <img class="avatar" src="images/download.png" height="200px" width="200px"/>
-<br><br>   <br><br> 
-   
-
-    <div class="row">
-        <div class="column" style="background-color:#cdcdcd;margin-left:12%">
-          <h2>About me</h2>
-          <p> See what I&rsquo;m doing on GitHub at <a href="https://github.com/Jault1/" target="_blank">https://github.com/Jault1/</a></p>
-          <br><br>
-          <h2>Stuff I like:</h2>
-            <ul style="text-align: left;">
-              <li>Camping</li>
-              <li>Boating</li>
-              <li>Web development</li>
-            </ul>
-        </div>
-        <div class="column" style="background-color:#bbb;">
-            <img src="images/Screenshot 2023-06-22 125345.png" width="300" height="auto">
-            <p>Hi. My name is John and I live in Ohio and I'm learning <strong>HTML, Git, GitHub, and Git Bash</strong> from a dude in Canada who works for a company in Norway.</p>
-        </div>
-        <div class="column" style="background-color:#cdcdcd;">
-            <h2>Contact me:</h2>
-            <form>
-            <label for="fname">First name</label>
-            <input type="text" id="fname" name="fname" placeholder="Enter first name" /><br>
-            <br>
-            <label for="lname">Last name</label>
-            <input type="text" id="lname" name="lname" placeholder="Enter last name" /><br>
-            <br>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter email" />
-            <br>
-            <br>
-            <label for="comments">Comments</label>
-            <textarea id="comments" name="comments" rows="4" cols="18"></textarea>
-            <br>
-            <br>
-            <input type="submit" value="Submit">
-        </form>        </div>
-      </div>    
-    <!-- List -->
-
-    
+  function printMe(){
   
+      console.log("I am a reference example");
+  
+  }   
+-->
 
- 
+  <meta charset="UTF-8">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<p><strong>Submission</strong><br>
-Submit the URL of the GitHub Repository that contains your work.</p>
-
-<p>Should you reference the work of your classmate(s) or online resources, give them credit by adding either the name of your classmate or URL.<br>
-References<br>
-Example of Referencing Classmate<br>
-Referenced the code block below.</p>
-
-<code>
-    //This code was referenced from <source><br>
-    <br>
-    function printMe(){<br>
-        <br>
-        console.log("I am a reference example");<br>
-        <br>
+  <title>Bio: John Ault</title>
+  <style>
+    .avatar {
+      border-radius: 50%;
     }
-  </code>
 
-    <h3>Example of Referencing Online Resources</h3>
+    * {
+      box-sizing: border-box;
+    }
 
-<p>
-  developer.mozilla.org/en-US/<br>
-  w3schools.com/html/<br>
-  stackoverflow.com/questions/14494747/how-to-add-images-to-readme-md-on-github<br>
-</p>
-      
-  <p>Check out my full profile at <a href="https://w3schools.com">W3Schools!</a></p>
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 340px;
+      padding: 20px;
+      margin: 20px;
+      height: 400px;
+      /* Should be removed. Only for demonstration */
+    }
 
-    
-  </body>
-    
-  </html>
-    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body align="center">
+
+  <!-- This is how i add comments, that HTML Will ignore -->
+
+  <!-- Headers H1 -> H6-->
+
+  <h1>John Ault</h1>
+  <img class="avatar" src="images/download.png" height="200px" width="200px" />
+  <br><br> 
+  <br><br>
+
+  <div class="row">
+    <div class="column" style="background-color:#cdcdcd;margin-left:12%">
+      <h2>About me</h2>
+      <p> See what I&rsquo;m doing on GitHub at <a href="https://github.com/Jault1/"
+          target="_blank">https://github.com/Jault1/</a></p>
+      <br><br>
+      <h2>Stuff I like:</h2>
+      <ul style="text-align: left;">
+        <li>Camping</li>
+        <li>Boating</li>
+        <li>Web development</li>
+      </ul>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+      <img src="images/Screenshot 2023-06-22 125345.png" width="300" height="auto">
+      <p>Hi. My name is John and I live in Ohio and I'm learning <strong>HTML, Git, GitHub, and Git Bash</strong> from a
+        dude in Canada who works for a company in Norway.</p>
+    </div>
+    <div class="column" style="background-color:#cdcdcd;">
+      <h2>Contact me:</h2>
+      <form>
+        <label for="fname">First name</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter first name" /><br>
+        <br>
+        <label for="lname">Last name</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter last name" /><br>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter email" />
+        <br>
+        <br>
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments" rows="4" cols="18"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  <!-- List -->
+
+  <p><strong>Submission</strong><br>
+    Submit the URL of the GitHub Repository that contains your work.</p>
+
+  <h3>Online Referenced Resources</h3>
+
+  <p>
+    developer.mozilla.org/en-US/<br>
+    w3schools.com/html/<br>
+    stackoverflow.com/questions/14494747/how-to-add-images-to-readme-md-on-github<br><br><br>
+  </p>
+
+  <p>Learn to do this yourself here: <a href="https://w3schools.com">W3Schools!</a></p>
+
+</body>
+
+</html>
