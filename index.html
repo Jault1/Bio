@@ -21,15 +21,17 @@
 
   <title>Bio: John Ault</title>
   <style>
-#main {
-  width: 90%;
- margin: auto;
-} 
+    #main {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+    }
 
-body {
+    body {
       font-size: 16px;
       line-height: 20px;
-      font-family:Arial, Helvetica, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       padding-bottom: 80px;
     }
 
@@ -63,7 +65,7 @@ body {
 
     .col1 {
       background-color: #b2b2b2 !important;
-      margin-left:12%;
+      margin-left: 12%;
       text-align: left;
     }
 
@@ -78,7 +80,7 @@ body {
 
     #bashCodes {
       border: 1px solid greenyellow;
-      clear:both;
+      clear: both;
       text-align: left;
       margin: 50px;
       padding: 50px;
@@ -95,62 +97,66 @@ body {
   <h1>John Ault</h1>
   <img class="avatar" src="images/download.png" height="200px" width="200px" />
 
-          <!-- New row -->
-<div id="main">
-  <div class="row">
+  <!-- New row -->
+  <div id="main">
+    <div class="row">
 
-              <!-- New column -->
-    <div class="column col1">
-      <h2>About me</h2>
-      <p> See what I&rsquo;m doing on GitHub at <a href="https://github.com/Jault1/"
-          target="_blank">https://github.com/Jault1/</a></p>
-      <br><br>
-      <h2>Stuff I like:</h2>
+      <!-- New column -->
+      <div class="column col1">
+        <h2>About me</h2>
+        <p> See what I&rsquo;m doing on GitHub at <a href="https://github.com/Jault1/"
+            target="_blank">https://github.com/Jault1/</a></p>
+        <br><br>
+        <h2>Stuff I like:</h2>
 
         <!-- List -->
 
-      <ul style="text-align: left;">
-        <li>Camping</li>
-        <li>Boating</li>
-        <li>Web development</li>
-      </ul>
-    </div>
+        <ul style="text-align: left;">
+          <li>Camping</li>
+          <li>Boating</li>
+          <li>Web development</li>
+        </ul>
+      </div>
 
-              <!-- New column -->    
-    <div class="column col2">
-      <img src="images/Screenshot 2023-06-22 125345.png" width="300" height="auto">
-      <p>Hi. My name is John, I live in Ohio, and I've installed <strong>WSL, VS Code, Git, and Bash</strong> and am learning to write some <strong>HTML</strong> inside <strong>VS Code</strong> and using Git and Git Bash to push up to GitHub</strong>. I'm learning all of this from a dude in Canada who works for a company in Norway. <br>
-        <br>
-        Wait what?</p>
-    </div>
+      <!-- New column -->
+      <div class="column col2">
+        <img src="images/Screenshot 2023-06-22 125345.png" width="300" height="auto">
+        <p>Hi. My name is John, I live in Ohio, and I've installed <strong>WSL, VS Code, Git, and Bash</strong> and am
+          learning to write some <strong>HTML</strong> inside <strong>VS Code</strong> and using Git and Git Bash to
+          push up to GitHub</strong>. I'm learning all of this from a dude in Canada who works for a company in Norway.
+          <br>
+          <br>
+          Wait what?
+        </p>
+      </div>
 
-              <!-- New column -->    
-    <div class="column col3">
-      <h2>Contact me:</h2>
-      <form>
-        <label for="fname">First name</label>
-        <input type="text" id="fname" name="fname" placeholder="Enter first name" /><br>
-        <br>
-        <label for="lname">Last name</label>
-        <input type="text" id="lname" name="lname" placeholder="Enter last name" /><br>
-        <br>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter email" />
-        <br>
-        <br>
-        <label for="comments">Comments</label>
-        <textarea id="comments" name="comments" rows="4" cols="18"></textarea>
-        <br>
-        <br>
-        <input type="submit" value="Submit"><br>
-        <br>
-        <em>Note: This goes nowhere because we didn't learn that yet.</em>
-      </form>
+      <!-- New column -->
+      <div class="column col3">
+        <h2>Contact me:</h2>
+        <form>
+          <label for="fname">First name</label>
+          <input type="text" id="fname" name="fname" placeholder="Enter first name" /><br>
+          <br>
+          <label for="lname">Last name</label>
+          <input type="text" id="lname" name="lname" placeholder="Enter last name" /><br>
+          <br>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter email" />
+          <br>
+          <br>
+          <label for="comments">Comments</label>
+          <textarea id="comments" name="comments" rows="4" cols="18"></textarea>
+          <br>
+          <br>
+          <input type="submit" value="Submit"><br>
+          <br>
+          <em>Note: This goes nowhere because we didn't learn that yet.</em>
+        </form>
+      </div>
+
+      <!-- End Row -->
     </div>
-    
-              <!-- End Row -->    
-  </div>
-</div> <!-- end main div -->
+  </div> <!-- end main div -->
   <h2>Online Referenced Resources</h2>
 
   <p>
@@ -164,72 +170,83 @@ body {
   <div id="bashCodes">
 
     <h2>What’s the Difference Between Git and GitHub?</h2>
-<ul>
-  <li>Git is the tool that will let you create a local repository (on your PC) and manage versions of your files</li>
-  <li>GitHub is an online service that will host your Git repositories (in the cloud)</li>
-</ul>
-
-<h2>How to install WSL (for windows)</h2>
-<ol>
-  <li><strong>Download WSL2 (including Bash shell) on Windows 10/11</strong> # <a href="https://learn.microsoft.com/en-us/windows/wsl/install" target="_blank">Go here.</li>
-  <li><strong>Run it</strong> # Open a windows command prompt and type: wsl --install</li>
-</ol>
-
-<h2>How to get GIT and BASH (for windows)</h2>
-<ol>
-  <li><strong>Download</strong> # Go here and download: <a href="https://git-scm.com/download/win" target="_blank">Go GET GIT!</a>
-  <li><strong>Now install</strong> # I just chose the defaults for now.</li>
-</ol>
-
-<h2>How to get Microsoft VS Code</h2>
-<ol>
-  <li><strong>Download</strong> # Go here and download: <a href="https://code.visualstudio.com/" target="_blank">Get VS Code</a></li>
-  <li><strong>Now install</strong> # I just chose the defaults for now.</li>
-</ol>
-
-<h2 style="text-align:left;">Three environments</h2>
-<ol>
-  <li><strong>Working directory (files)</strong></li>
-  <li><strong>Staging (area)</strong> - is the middle ground between changes you have made to your local files and what you last committed (snapshot).<br>
-      <code>git add&hellip;</code> # To add working file(s) to staging<br>
-      <code>git commit&hellip;</code>  # Captures a snapshot of the project's currently staged changes. Committed snapshots can be thought of as “safe” versions of a project—Git will never change them unless you explicitly ask it to.
-    </li>
-    <li><strong>Remote GitHub Repository</strong><br>
-      <code>git push&hellip</code> # To push staging repo to remote repo
+    <ul>
+      <li>Git is the tool that will let you create a local repository (on your PC) and manage versions of your files
       </li>
-</ol>
+      <li>GitHub is an online service that will host your Git repositories (in the cloud)</li>
+    </ul>
 
-<h2>What’s the Difference Between Fork and Clone?</h2>
-<ul>
-  <li><strong>FORK</strong> creates a copy from another user to your REMOTE repository</li>
-    <li><strong>CLONE</strong> creates a copy from your REMOTE repository to your LOCAL repository</li>
-</ul>
+    <h2>How to install WSL (for windows)</h2>
+    <ol>
+      <li><strong>Download WSL2 (including Bash shell) on Windows 10/11</strong> # <a
+          href="https://learn.microsoft.com/en-us/windows/wsl/install" target="_blank">Go here.</li>
+      <li><strong>Run it</strong> # Open a windows command prompt and type: wsl --install</li>
+    </ol>
 
-<h2>Git Bash commands</h2>
-<ul>
-  <li><strong>ls</strong> # List folders / files in the current directory</li>
-  <li><strong>pwd</strong> # Provides the path of current directory</li>
-  <li><strong>cd</strong> # Change directory</li>
-  <li><strong>mkdir</strong> # Make a directory (folder)</li>
-  <li><strong>touch</strong> # Make a file</li>
-  <li><strong>clear</strong> # Clear the screen</li>
-  <li><strong>status</strong> # Displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git.</li>
-  <li><strong>add</strong> # To add working file(s) to staging</li>
-  <li><strong>commit</strong>  # Captures a snapshot of the project's currently staged changes. Committed snapshots can be thought of as “safe” versions of a project—Git will never change them unless you explicitly ask it to.</li>
-  <li><strong>push</strong> # To push staging repo UP to remote repo</li>
-  <li><strong>pull</strong> # To pull remote repo DOWN to staging repo</li>
-  <li><strong>rm -r NAME_OF_DIR</strong> # -r stands for recursive</li>
-   
-</ul>
+    <h2>How to get GIT and BASH (for windows)</h2>
+    <ol>
+      <li><strong>Download</strong> # Go here and download: <a href="https://git-scm.com/download/win"
+          target="_blank">Go GET GIT!</a>
+      <li><strong>Now install</strong> # I just chose the defaults for now.</li>
+    </ol>
 
-<h2>How to create a repository in GitHub.</h2>
-<ol>
-  <li><strong>Create an account</strong> # Go to <a href="https://www.github.com/" target="_blank">GitHub</a> and create an account.</li>
-  <li><strong>title</strong> # definition</li>
-  <li><strong>title</strong> # definition</li>
-</ol>
+    <h2>How to get Microsoft VS Code</h2>
+    <ol>
+      <li><strong>Download</strong> # Go here and download: <a href="https://code.visualstudio.com/" target="_blank">Get
+          VS Code</a></li>
+      <li><strong>Now install</strong> # I just chose the defaults for now.</li>
+    </ol>
 
-  <h2>Here is how you clone from GitHub and push your changes up.</h2>
+    <h2 style="text-align:left;">Three environments</h2>
+    <ol>
+      <li><strong>Working directory (files)</strong></li>
+      <li><strong>Staging (area)</strong> - is the middle ground between changes you have made to your local files and
+        what you last committed (snapshot).<br>
+        <code>git add&hellip;</code> # To add working file(s) to staging<br>
+        <code>git commit&hellip;</code> # Captures a snapshot of the project's currently staged changes. Committed
+        snapshots can be thought of as “safe” versions of a project—Git will never change them unless you explicitly ask
+        it to.
+      </li>
+      <li><strong>Remote GitHub Repository</strong><br>
+        <code>git push&hellip</code> # To push staging repo to remote repo
+      </li>
+    </ol>
+
+    <h2>What’s the Difference Between Fork and Clone?</h2>
+    <ul>
+      <li><strong>FORK</strong> creates a copy from another user to your REMOTE repository</li>
+      <li><strong>CLONE</strong> creates a copy from your REMOTE repository to your LOCAL repository</li>
+    </ul>
+
+    <h2>Git Bash commands</h2>
+    <ul>
+      <li><strong>ls</strong> # List folders / files in the current directory</li>
+      <li><strong>pwd</strong> # Provides the path of current directory</li>
+      <li><strong>cd</strong> # Change directory</li>
+      <li><strong>mkdir</strong> # Make a directory (folder)</li>
+      <li><strong>touch</strong> # Make a file</li>
+      <li><strong>clear</strong> # Clear the screen</li>
+      <li><strong>status</strong> # Displays the state of the working directory and the staging area. It lets you see
+        which changes have been staged, which haven't, and which files aren't being tracked by Git.</li>
+      <li><strong>add</strong> # To add working file(s) to staging</li>
+      <li><strong>commit</strong> # Captures a snapshot of the project's currently staged changes. Committed snapshots
+        can be thought of as “safe” versions of a project—Git will never change them unless you explicitly ask it to.
+      </li>
+      <li><strong>push</strong> # To push staging repo UP to remote repo</li>
+      <li><strong>pull</strong> # To pull remote repo DOWN to staging repo</li>
+      <li><strong>rm -r NAME_OF_DIR</strong> # -r stands for recursive</li>
+
+    </ul>
+
+    <h2>How to create a repository in GitHub.</h2>
+    <ol>
+      <li><strong>Create an account</strong> # Go to <a href="https://www.github.com/" target="_blank">GitHub</a> and
+        create an account.</li>
+      <li><strong>title</strong> # definition</li>
+      <li><strong>title</strong> # definition</li>
+    </ol>
+
+    <h2>Here is how you clone from GitHub and push your changes up.</h2>
     <ol>
       <li>git clone https://github.com/Jault1/Bio.git # in your remote repo</li>
       <li>pwd to make sure you are in the cloned directory</li>
@@ -242,11 +259,11 @@ body {
       <li>git push origin main # To push staging repo to remote repo</li>
       <li>#Visit remote repo to compare.</li>
     </ol>
-    
-    <h2>How to make your GitHub Repository viewable as a webpage/site.</h2>
-<p>Coming soon. But basically go to settings/pages and set default to main/root/ and click save.</p>
 
-    </div>
+    <h2>How to make your GitHub Repository viewable as a webpage/site.</h2>
+    <p>Coming soon. But basically go to settings/pages and set default to main/root/ and click save.</p>
+
+  </div>
 </body>
 
 </html>
