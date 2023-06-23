@@ -70,6 +70,12 @@
       background-color: #f18973 !important;
       text-align: right;
     }
+
+    #bashCodes {
+      border: 1px solid greenyellow;
+      clear:both;
+      text-align: left;
+    }
   </style>
 </head>
 
@@ -149,6 +155,30 @@
 
   <p><strong>Learn to do this yourself here: <a href="https://w3schools.com">W3Schools!</a></strong></p>
 
+  <div id="bashCodes">
+<h2 style="text-align:left;">THREE ENVIRONMENTS</h2>
+<ol>
+  <li>Working files</li>
+    <li>Staging</li>
+    <li>Commit</li>
+    <br>
+    <strong>FORK</strong> creates a copy from another user to your REMOTE repository<br>
+    <strong>CLONE</strong> creates a copy from your REMOTE repository to your LOCAL repository<br>
+    
+    <ol>
+      <li>git clone https://github.com/Jault1/Bio.git # in your remote repo</li>
+      <li>pwd to make sure you are in the cloned directory</li>
+      <li># Make changes in VS Code</li>
+      <li># touch test.txt # to create new files - Edit in VS Code</li>
+      <li>git status # to see changes (Red)</li>
+      <li>git add . # to add all changes to staging</li>
+      <li>git status # to see changes (Green)</li>
+      <li>git commit -m "Added second paragraph." # To add working files to staging</li>
+      <li>git push origin main # To push staging repo to remote repo</li>
+      <li>#Visit remote repo to compare.</li>
+    </ol>
+    
+    </div>
 </body>
 
 </html>
