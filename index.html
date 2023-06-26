@@ -106,7 +106,6 @@ aside {
 -->
 
 
-
 <section>
   <article>
       <header>
@@ -117,8 +116,12 @@ aside {
           </hgroup>
       <nav>
           <ul>
-              <li><a href="#">Menu Option 1</a></li>
-              <li><a href="#">Menu Option 2</a></li>
+            <ul>
+              <li><a href="#aboutme">About Me</a></li>
+              <li><a href="#geolocation">Geo Location</a></li>
+              <li><a href="#contactme">Contact me</a></li>
+              <li><a href="#bashCodes">Git & Bash</a></li>
+          </ul>
           </ul>
       </nav>
   
@@ -129,13 +132,24 @@ aside {
   </article>
 </section>
 
-<section>
+<aside>
+  <section>
+      <h1>Links</h1>
+      <ul>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#geolocation">Geo Location</a></li>
+          <li><a href="#contactme">Contact me</a></li>
+          <li><a href="#bashCodes">Git & Bash</a></li>
+      </ul>
+  </section>
+</aside>
+
   <!-- New row -->
-  <div id="main">
-    <div class="row">
+  <section id="main">
+    <section class="row">
 
       <!-- New column -->
-      <div class="column col1">
+      <article id="aboutme" class="column col1">
         <h2>About me</h2>
         <p> See what I&rsquo;m doing on GitHub at <a href="https://github.com/Jault1/"
             target="_blank">https://github.com/Jault1/</a></p>
@@ -149,10 +163,10 @@ aside {
           <li>Boating</li>
           <li>Web development</li>
         </ul>
-      </div>
+      </article>
 
       <!-- New column -->
-      <div class="column col2">
+      <article id="geolocation" class="column col2">
         <img src="images/Screenshot 2023-06-22 125345.png" width="300" height="auto">
         <p>Hi. My name is John, I live in Ohio, and I've installed <strong>WSL, VS Code, Git, and Bash</strong> and am
           learning to write some <strong>HTML</strong> inside <strong>VS Code</strong> and using Git and Git Bash to
@@ -161,10 +175,10 @@ aside {
           <br>
           Wait what?
         </p>
-      </div>
+      </article>
 
       <!-- New column -->
-      <div class="column col3">
+      <article id="contactme" class="column col3">
         <h2>Contact me:</h2>
         <form>
           <label for="fname">First name</label>
@@ -185,11 +199,12 @@ aside {
           <br>
           <em>Note: This goes nowhere because we didn't learn that yet.</em>
         </form>
-      </div>
-
+      </article>
       <!-- End Row -->
-    </div>
-  </div> <!-- end main div -->
+    </section>
+  </section> 
+
+
   <h2>Online Referenced Resources</h2>
 
   <p>
@@ -323,7 +338,7 @@ aside {
   <section>
     <article>
         <header>
-            <h1>Article #1</h1>
+            <h1>Tables</h1>
         </header>
         <section>
           <table border>
@@ -350,7 +365,8 @@ aside {
               <td>k</td>
               <td>l</td>
             </tr>    
-          </table>        </section>
+          </table>        
+        </section>
     </article>
     <article>
         <header>
@@ -362,21 +378,7 @@ aside {
     </article>
 </section>
 
-<aside>
-  <section>
-      <h1>Links</h1>
-      <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-      </ul>
-  </section>
-  <figure>
-      <img width="85" height="85" 
-          src="http://domain.tld/path/to/image.jpg" 
-          alt="foobar" />
-      <figcaption>Foobar</figcaption>
-  </figure>
-</aside>
+
 <footer>Footer</footer>
 </body>
 </html>
