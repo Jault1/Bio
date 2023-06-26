@@ -1,9 +1,99 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Bio: John Ault</title>
+    <style>
+      #h1Top {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+  
+  
+      body {
+        font-size: 16px;
+        line-height: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-bottom: 80px;
+      }
+  
+      .avatar {
+        border-radius: 50%;
+        margin-bottom: 80px;
+  
+      }
+  
+      #main {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+      }
+  
+      * {
+        box-sizing: border-box;
+      }
+  
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 340px;
+        padding: 20px;
+        margin: 20px;
+        height: 400px;
+        /* Should be removed. Only for demonstration */
+      }
+  
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        padding-bottom: 80px;
+      }
+  
+      .col1 {
+        background-color: #b2b2b2 !important;
+        text-align: left;
+      }
+  
+      .col2 {
+        background-color: #f4e1d2 !important;
+      }
+  
+      .col3 {
+        background-color: #f18973 !important;
+        text-align: right;
+      }
+  
+      #bashCodes {
+        border: 1px solid greenyellow;
+        clear: both;
+        text-align: left;
+        margin: 50px;
+        padding: 50px;
+      }
 
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
+
+    </style>
+
+<!-- <link href="stylesheets/main.css" rel="stylesheet" /> -->
+</head>
+
+<body align="center">
+
+    
   <!-- 
   
   //This code was referenced from
@@ -15,93 +105,31 @@
   }   
 -->
 
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Bio: John Ault</title>
-  <style>
-    #h1Top {
-      padding-top: 80px;
-      padding-bottom: 80px;
-    }
 
 
-    body {
-      font-size: 16px;
-      line-height: 20px;
-      font-family: Arial, Helvetica, sans-serif;
-      padding-bottom: 80px;
-    }
+<section>
+  <article>
+      <header>
+          <hgroup>
+            <h1 id="h1Top">John Ault</h1>
+            <h2>Subheader</h2>
+            <img class="avatar" src="images/download.png" height="200px" width="200px" />
+          </hgroup>
+      <nav>
+          <ul>
+              <li><a href="#">Menu Option 1</a></li>
+              <li><a href="#">Menu Option 2</a></li>
+          </ul>
+      </nav>
+  
+      </header>
+      <section>
+          This is the first article.
+      </section>
+  </article>
+</section>
 
-    .avatar {
-      border-radius: 50%;
-      margin-bottom: 80px;
-
-    }
-
-    #main {
-      width: 90%;
-      margin: auto;
-      display: flex;
-      justify-content: center;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    /* Create three equal columns that floats next to each other */
-    .column {
-      float: left;
-      width: 340px;
-      padding: 20px;
-      margin: 20px;
-      height: 400px;
-      /* Should be removed. Only for demonstration */
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-      padding-bottom: 80px;
-    }
-
-    .col1 {
-      background-color: #b2b2b2 !important;
-      text-align: left;
-    }
-
-    .col2 {
-      background-color: #f4e1d2 !important;
-    }
-
-    .col3 {
-      background-color: #f18973 !important;
-      text-align: right;
-    }
-
-    #bashCodes {
-      border: 1px solid greenyellow;
-      clear: both;
-      text-align: left;
-      margin: 50px;
-      padding: 50px;
-    }
-  </style>
-</head>
-
-<body align="center">
-
-  <!-- This is how i add comments, that HTML Will ignore -->
-
-  <!-- Headers H1 -> H6-->
-
-  <h1 id="h1Top">John Ault</h1>
-  <img class="avatar" src="images/download.png" height="200px" width="200px" />
-
+<section>
   <!-- New row -->
   <div id="main">
     <div class="row">
@@ -239,7 +267,7 @@
       <li><strong>push</strong> # To push staging repo UP to remote repo</li>
       <li><strong>pull</strong> # To pull remote repo DOWN to staging repo</li>
       <li><strong>rm -r NAME_OF_DIR</strong> # -r stands for recursive</li>
-
+      <li><strong>code .</strong> # Opens up VS Code in the current directory</li>
     </ul>
 
     <h2>How to create a repository in GitHub.</h2>
@@ -264,7 +292,7 @@
       <li>git status # to see changes (Green)</li>
       <li>git commit -m "Added second paragraph." # To add working files to staging</li>
       <li>git push origin main # To push staging repo to remote repo</li>
-      <li>#Visit remote repo to compare.</li>
+      <li>#Visit remote repo to compare.</li> 
     </ol>
 
     <h2>How to make your GitHub Repository viewable as a webpage/site.</h2>
@@ -272,6 +300,89 @@
       On the left under "COde and automation", Select Pages.<br>
       Under "Build and Deployment", then under "Branch" Change to "main" and "/(root)" and click save.</p>
   </div>
-</body>
+  <section>
+    <article>
+        <header>
+            <h1>Article #1</h1>
+        </header>
+        <section>
+            This is the first article.
+        </section>
+    </article>
+    <article>
+        <header>
+            <h1>Article #2</h1>
+        </header>
+        <section>
+            This is the second article.
+        </section>
+    </article>
+</section>
 
+
+  <section>
+    <article>
+        <header>
+            <h1>Article #1</h1>
+        </header>
+        <section>
+          <table border>
+            <tr>
+              <td>a</td>
+              <td>b</td>
+              <td>c</td>
+            </tr>
+            <tr>
+              <td>d</td>
+              <td>e</td>
+              <td>f</td>
+            </tr>    
+          </table>
+        
+          <table border>
+            <tr>
+              <td>g</td>
+              <td>h</td>
+              <td>i</td>
+            </tr>
+            <tr>
+              <td>j</td>
+              <td>k</td>
+              <td>l</td>
+            </tr>    
+          </table>        </section>
+    </article>
+    <article>
+        <header>
+            <h1>Article #2</h1>
+        </header>
+        <section>
+            This is the second article.
+        </section>
+    </article>
+</section>
+
+<aside>
+  <section>
+      <h1>Links</h1>
+      <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+      </ul>
+  </section>
+  <figure>
+      <img width="85" height="85" 
+          src="http://domain.tld/path/to/image.jpg" 
+          alt="foobar" />
+      <figcaption>Foobar</figcaption>
+  </figure>
+</aside>
+<footer>Footer</footer>
+</body>
 </html>
+
+
+
+
+
+
