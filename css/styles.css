@@ -92,6 +92,7 @@ footer {
 }  
 
 #box-model {
+  width: 75%;
   background-color: #f4e1d2;
   margin: 20px;
   padding: 40px;
