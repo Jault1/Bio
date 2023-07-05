@@ -92,8 +92,8 @@ footer {
 }  
 
 #box-model {
-  background-color: aqua;
-  margin: 100px;
-  padding: 50px;
-  border: 12px solid black;
+  background-color: #f4e1d2;
+  margin: 20px;
+  padding: 40px;
+  border: 16px solid #b2b2b2;
 }
